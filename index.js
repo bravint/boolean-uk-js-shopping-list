@@ -31,9 +31,9 @@ var list = [
 ];
 
 for (i=1; i<Infinity; i++) {
-    var newDesc = prompt(`Add an item to the list`);
+    var newDesc = prompt(`Add an item to the list, type none to stop adding items`);
     var newPrice = Number(prompt(`How much does it cost`));
-    if (newDesc === '' || newPrice === 0 || newPrice !== newPrice) {
+    if (newDesc === '' || newDesc === 'none' || newPrice === 0 || newPrice !== newPrice) {
         break
     } else {
         var NewItem = {desc:newDesc, price:newPrice};
