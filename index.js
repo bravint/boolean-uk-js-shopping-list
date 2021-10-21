@@ -28,7 +28,7 @@ var list = [
         "desc": "ready meals",
         "price": 5.00
     },
-]
+];
 
 for (i=1; i<Infinity; i++) {
     var newDesc = prompt(`Add an item to the list`);
