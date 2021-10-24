@@ -41,4 +41,11 @@ for (i=1; i<Infinity; i++) {
     }
 }
 
+let priceTotal = 0
+for (i=0; i < list.length; i++) {
+    priceTotal += list[i].price;
+}
+priceTotal = priceTotal.toFixed(2)
+
 console.log(list);
+console.log(`Total price for all items on this list = £${priceTotal}`);
